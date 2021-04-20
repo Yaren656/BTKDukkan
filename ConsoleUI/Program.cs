@@ -11,14 +11,16 @@ namespace ConsoleUI
         {
             EfProductDal efProductDal = new EfProductDal();
 
-            Product product1 = new Product { 
+            Product product1 = new Product
+            {
                 CategoryId = 5,  //2'ye ekleme yapma, farklı id'de tabloya kategori girişi yap.
-                BrandId = 1, 
-                Name = "Su", 
-                Price = 2, 
-                CreateDate = DateTime.Now, 
-                Code = "WTR01", 
-                Active = true };
+                BrandId = 1,
+                Name = "Su",
+                Price = 2,
+                CreateDate = DateTime.Now,
+                Code = "WTR01",
+                Active = true
+            };
 
             efProductDal.Add(product1);
 
